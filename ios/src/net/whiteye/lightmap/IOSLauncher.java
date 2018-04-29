@@ -7,11 +7,13 @@ import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
 import net.whiteye.lightmap.Game;
 
-public class IOSLauncher extends IOSApplication.Delegate {
+import var3d.net.center.ios.VIOSLauncher;
+
+public class IOSLauncher extends VIOSLauncher {
     @Override
     protected IOSApplication createApplication() {
         IOSApplicationConfiguration config = new IOSApplicationConfiguration();
-        return new IOSApplication(new Game(), config);
+        return new IOSApplication(new Game(this), config);
     }
 
     public static void main(String[] argv) {

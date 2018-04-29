@@ -31,6 +31,8 @@
     <pattern>com.android.org.bouncycastle.crypto.digests.AndroidDigestFactoryOpenSSL</pattern>
     <pattern>org.apache.harmony.security.provider.cert.DRLCertFactory</pattern>
     <pattern>org.apache.harmony.security.provider.crypto.CryptoProvider</pattern>
+    <pattern>var3d.net.center.*</pattern>
+    <pattern>net.whiteye.lightmap.*</pattern>
   </forceLinkClasses>
   <libs>
       <lib>z</lib>   
