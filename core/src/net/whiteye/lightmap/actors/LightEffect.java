@@ -74,15 +74,6 @@ public class LightEffect extends Effect {
         shaderProgram.setUniformf("u_lightPos",new Vector3(pos.x,pos.y,lightPos.z));
 
 
-        shaderProgram.setUniformi("u_normals",1);
-
-        shaderProgram.setUniformf("u_lightColor",new Vector3(lightColor.r,lightColor.g,lightColor.b));
-
-        shaderProgram.setUniformf("u_ambientColor",new Vector3(
-                ambientLightColor.r,ambientLightColor.g,ambientLightColor.b
-        ));
-
-
         normalTex.bind(1);
 
         shaderProgram.setUniformf("u_brightness",brightness);
