@@ -73,8 +73,8 @@ public class LightEffect extends Effect {
         Vector2 pos = effectSprite.stageToLocalCoordinates(new Vector2(lightPos.x,lightPos.y));
         shaderProgram.setUniformf("u_lightPos",new Vector3(pos.x,pos.y,lightPos.z));
 
-
         normalTex.bind(1);
+        shaderProgram.setUniformi("u_normals",1);
 
         shaderProgram.setUniformf("u_brightness",brightness);
 
